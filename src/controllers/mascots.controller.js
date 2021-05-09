@@ -2,7 +2,12 @@ const Mascots = require('../models/masctos')
 
 const HomeRoute = (req, res) => {
     res.json({
-        api: "@1.0.0"
+        api: "@1.0.0",
+        getAll: "/api/v1/mascots",
+        getOne: "/api/v1/mascots/:id",
+        post: "/api/v1/mascots",
+        put: "/api/v1/mascots/:id",
+        delete: "/api/v1/mascots/:id"
     })
 }
 
